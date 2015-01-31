@@ -127,7 +127,7 @@
 
 	<suite name="ASOL Suite" code="ASOL">
 
-        <class name="application" code="capp" description="Comickaze's top-level scripting object" plural="applications" inherits="application">
+        <class name="application" code="capp" plural="applications" inherits="application">
             <cocoa class="AppleScriptObjectList.CustomApplication" />
 
             <element type="myobject" access="r">
@@ -142,15 +142,15 @@
 
         <class name="myobject" code="ASMO" inherits="item" plural="myobjects">
             <cocoa class="AppleScriptObjectList.MyObject" />
-            
+
             <property name="id" code="ID  " type="text" access="r">
                 <cocoa key="permanentID" />
             </property>
-            
+
             <property name="name" code="pnam" type="text" access="r">
                 <cocoa key="displayName" />
             </property>
-            
+
             <property name="is selected" code="ASsl" type="boolean" access="r">
                 <cocoa key="isSelected" />
             </property>
